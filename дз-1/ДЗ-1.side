@@ -1,0 +1,418 @@
+{
+  "id": "332d7640-91b7-4d31-82ea-84d56099b135",
+  "version": "2.0",
+  "name": "Задание-1",
+  "url": "https://ivanovskij-trikotazh.ru/",
+  "tests": [{
+    "id": "79de1539-cf8a-471d-a144-8c9c29b386d4",
+    "name": "Авторизация на сайте по e-mail",
+    "commands": [{
+      "id": "cf545e1c-020d-4df4-8c5a-38b994b323be",
+      "comment": "",
+      "command": "open",
+      "target": "https://ivanovskij-trikotazh.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14556c68-4068-403e-a221-9650c52780d7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1190x699",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f9ef2dd-3594-46b3-82eb-c86b12669696",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hamburger-inner",
+      "targets": [
+        ["css=.hamburger-inner", "css:finder"],
+        ["xpath=//button[@id='js-hamburger']/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77732205-0994-4d98-a5d7-32c11e80ca49",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.hamburger-inner",
+      "targets": [
+        ["css=.hamburger-inner", "css:finder"],
+        ["xpath=//button[@id='js-hamburger']/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd90faa7-ee31-4b4e-b870-7e988b99ea50",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.hamburger-inner",
+      "targets": [
+        ["css=.hamburger-inner", "css:finder"],
+        ["xpath=//button[@id='js-hamburger']/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2bee757-47bc-42ac-9525-b0959dd95553",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Войти",
+      "targets": [
+        ["linkText=Войти", "linkText"],
+        ["css=#welcome > li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Войти')])[2]", "xpath:link"],
+        ["xpath=(//a[@onclick='_closeMenu();'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='welcome']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '!#')])[2]", "xpath:href"],
+        ["xpath=//div[3]/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba10f95a-8a59-4637-936d-937a009ee815",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.modal__control-btn:nth-child(2)",
+      "targets": [
+        ["css=.modal__control-btn:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//section[@id='modal-login']/div[2]/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Email')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b9e0448-90b2-46e2-b4c7-8f6a897073c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal__control-btn:nth-child(2)",
+      "targets": [
+        ["css=.modal__control-btn:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//section[@id='modal-login']/div[2]/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Email')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "524c2cc6-5921-4697-bfe0-95618cc91389",
+      "comment": "",
+      "command": "click",
+      "target": "id=modal-email",
+      "targets": [
+        ["id=modal-email", "id"],
+        ["name=email", "name"],
+        ["css=#modal-email", "css:finder"],
+        ["xpath=//input[@id='modal-email']", "xpath:attributes"],
+        ["xpath=//section[@id='modal-login']/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02d79079-419d-477d-ad98-00af22bb18ee",
+      "comment": "",
+      "command": "type",
+      "target": "id=modal-email",
+      "targets": [
+        ["id=modal-email", "id"],
+        ["name=email", "name"],
+        ["css=#modal-email", "css:finder"],
+        ["xpath=//input[@id='modal-email']", "xpath:attributes"],
+        ["xpath=//section[@id='modal-login']/div[2]/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "eurosett017@gmail.com"
+    }, {
+      "id": "9d176277-e70d-4612-bccf-073bcf2c04fa",
+      "comment": "",
+      "command": "click",
+      "target": "id=modal-password",
+      "targets": [
+        ["id=modal-password", "id"],
+        ["name=password", "name"],
+        ["css=#modal-password", "css:finder"],
+        ["xpath=//input[@id='modal-password']", "xpath:attributes"],
+        ["xpath=//section[@id='modal-login']/div[2]/div/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "904288b4-b966-4254-85ca-33603ae5a08d",
+      "comment": "",
+      "command": "type",
+      "target": "id=modal-password",
+      "targets": [
+        ["id=modal-password", "id"],
+        ["name=password", "name"],
+        ["css=#modal-password", "css:finder"],
+        ["xpath=//input[@id='modal-password']", "xpath:attributes"],
+        ["xpath=//section[@id='modal-login']/div[2]/div/div[2]/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "xyZ1234$"
+    }, {
+      "id": "6693d950-8f96-43ab-8378-43a12130a3fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal__btn:nth-child(1)",
+      "targets": [
+        ["css=.modal__btn:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//section[@id='modal-login']/div[2]/div/div[2]/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2154c5f0-7dcb-4063-95e5-0ad46615c12b",
+    "name": "Добавление товара в корзину",
+    "commands": [{
+      "id": "db8c193c-0cb0-4f09-95fb-a6d6e8c7ccf2",
+      "comment": "",
+      "command": "open",
+      "target": "https://ivanovskij-trikotazh.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ea86d29-db83-4dd7-85fd-64b8c07cf75e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1190x699",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aeb74424-7727-4f03-93c0-ca37ec5f00f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#slideshow0 > .nivo-imageLink:nth-child(1)",
+      "targets": [
+        ["css=#slideshow0 > .nivo-imageLink:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='slideshow0']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ivanovskij-trikotazh.ru/postelnye-prinadlezhnosti/odeyala-1/')])[37]", "xpath:href"],
+        ["xpath=//div[4]/div[3]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d931a22-eae1-47c3-95fb-ecc666b7c746",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main201300 img",
+      "targets": [
+        ["css=.main201300 img", "css:finder"],
+        ["xpath=//img[@alt='(LV) Одеяло \"Овечка\" Classic (150г/м2) легкое']", "xpath:img"],
+        ["xpath=//div[@id='catalog_list']/div[4]/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "796b2d51-1b4f-4a97-a1fe-83ec76ae96a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.noselect1:nth-child(12)",
+      "targets": [
+        ["css=.noselect1:nth-child(12)", "css:finder"],
+        ["xpath=//div[@id='option-1303365']/label[5]", "xpath:idRelative"],
+        ["xpath=//label[5]", "xpath:position"],
+        ["xpath=//label[contains(.,'240х215')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05213422-0ce0-41df-a34a-8201e13fcbbd",
+      "comment": "",
+      "command": "click",
+      "target": "id=button-cart",
+      "targets": [
+        ["id=button-cart", "id"],
+        ["css=#button-cart", "css:finder"],
+        ["xpath=//input[@id='button-cart']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/div[3]/div/div[4]/ul/li[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5e476bc-0de2-43a6-96b6-c5910b595ba4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-plus",
+      "targets": [
+        ["css=.fa-plus", "css:finder"],
+        ["xpath=//button[@id='plus']/i", "xpath:idRelative"],
+        ["xpath=//button[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b3dd2f4-0f72-41fd-868f-882bf75aaade",
+      "comment": "",
+      "command": "click",
+      "target": "id=button-cart",
+      "targets": [
+        ["id=button-cart", "id"],
+        ["css=#button-cart", "css:finder"],
+        ["xpath=//input[@id='button-cart']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/div[3]/div/div[4]/ul/li[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56f28223-1d0a-4e6f-8900-88f8e7109e9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mobile-cart__count",
+      "targets": [
+        ["css=.mobile-cart__count", "css:finder"],
+        ["xpath=//div[@id='container']/div/div[3]/a[2]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9d1282bf-614f-4b63-be3e-8cd0ee5225c8",
+    "name": "Удаление товара из корзины",
+    "commands": [{
+      "id": "87f41e4f-7027-4e20-ba76-6eb8149e7354",
+      "comment": "",
+      "command": "open",
+      "target": "https://ivanovskij-trikotazh.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6ad5002-8e02-48b0-9c5c-c31ae0d7acfb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1190x699",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "617d3e6b-8d22-4023-841d-4aa0535d710e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mobile-cart__icon-body",
+      "targets": [
+        ["css=.mobile-cart__icon-body", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "aba08c34-a867-45c2-bc6c-8fa8317d989b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.mobile-cart__icon-body",
+      "targets": [
+        ["css=.mobile-cart__icon-body", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0460cf4b-aa5a-43d9-9ab5-7931c9572ad3",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(6) > .retailrocket .retailrocket-item:nth-child(2) img",
+      "targets": [
+        ["css=div:nth-child(6) > .retailrocket .retailrocket-item:nth-child(2) img", "css:finder"],
+        ["xpath=//div[@id='content']/div[4]/div/ul/li[2]/a/div/img", "xpath:idRelative"],
+        ["xpath=//li[2]/a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4beda1f7-1d0c-44a3-bd69-4d8a0dbfa70e",
+      "comment": "",
+      "command": "click",
+      "target": "id=button-cart",
+      "targets": [
+        ["id=button-cart", "id"],
+        ["css=#button-cart", "css:finder"],
+        ["xpath=//input[@id='button-cart']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/div[3]/div/div[3]/ul/li[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfd5e48e-ffa8-457e-b60f-bc5c6bb72208",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-mobile__user-cart path:nth-child(3)",
+      "targets": [
+        ["css=.header-mobile__user-cart path:nth-child(3)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "20d73e0a-0f87-4556-b1f7-cd5d90b5359b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-trash-o",
+      "targets": [
+        ["css=.fa-trash-o", "css:finder"],
+        ["xpath=//div[@id='simplecheckout_cart']/table/tbody/tr/td[7]/i", "xpath:idRelative"],
+        ["xpath=//td[7]/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "774e9611-368d-4b88-919c-0f89608a1891",
+    "name": "Поиск товара по наименованию",
+    "commands": [{
+      "id": "5b5e030c-530a-453a-b9e7-20a3e6e6947d",
+      "comment": "",
+      "command": "open",
+      "target": "https://ivanovskij-trikotazh.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd4dce3b-8409-427c-84ac-b077bb8a03c9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1190x699",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4941a3a5-b44c-4ba0-8c6b-76bed8f2652c",
+      "comment": "",
+      "command": "click",
+      "target": "id=js-mobileSearchOpen",
+      "targets": [
+        ["id=js-mobileSearchOpen", "id"],
+        ["css=#js-mobileSearchOpen", "css:finder"],
+        ["xpath=//button[@id='js-mobileSearchOpen']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Поиск')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "824c136e-42dd-4247-b498-da9a672568f2",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.no-bottom-borders", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "наволочка"
+    }, {
+      "id": "17769c69-372c-4dd9-8a37-4ef4113e932a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.no-bottom-borders", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "e8c2f245-a1be-4c43-bb0b-a65ecf2b9571",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://automationpractice.com/", "https://ivanovskij-trikotazh.ru/"],
+  "plugins": []
+}
